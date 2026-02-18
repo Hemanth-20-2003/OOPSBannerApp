@@ -1,23 +1,22 @@
 /**
- * OOPSBannerApp UC2 – OOPS Banner Display Application
+ * OOPSBannerApp UC3 – OOPS Banner Display Application
  * @author Developer
- * @version 2.0
- * This version prints a decorative ASCII banner of the word "OOPS"
- * using multiple System.out.println statements.
+ * @version 3.0
+ * by using String.join() to align and format each row.
+ * Instead of manually spacing everywhere.
  **/
 class OOPSBannerApp{
 	public static void main(String[] args){
-
-		// Printing the banner row by row
-		System.out.println("   "+"   ***        ***     *******     *****   ");
-		System.out.println("   "+" **   **    **   **   **    *   **        ");
-		System.out.println("   "+"**     **  **     **  **    *  **         ");
-		System.out.println("   "+"**     **  **     **  **    *   **        ");
-		System.out.println("   "+"**     **  **     **  *******     ***     ");
-		System.out.println("   "+"**     **  **     **  **             **   ");
-		System.out.println("   "+"**     **  **     **  **              **  ");
-		System.out.println("   "+" **   **    **   **   **             **   ");
-		System.out.println("   "+"   ***        ***     **        *****     ");
 		
+		// Printing the banner row by row
+		System.out.println(String.join("   ","   ***   ","   ***   ","*******","   ***** "));
+		System.out.println(String.join("   "," **   ** "," **   ** ","**    *"," **      "));
+		System.out.println(String.join("   ","**     **","**     **","**    *","**       "));
+		System.out.println(String.join("   ","**     **","**     **","**    *"," **      "));
+		System.out.println(String.join("   ","**     **","**     **","*******","   ***   "));
+		System.out.println(String.join("   ","**     **","**     **","**     ","      ** "));
+		System.out.println(String.join("   ","**     **","**     **","**     ","       **"));
+		System.out.println(String.join("   "," **   ** "," **   ** ","**     ","      ** "));
+		System.out.println(String.join("   ","   ***   ","   ***   ","**     "," *****   "));
 	}
 }
